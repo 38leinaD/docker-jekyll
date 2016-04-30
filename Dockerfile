@@ -13,5 +13,7 @@ RUN gem install jekyll \
 
 VOLUME /src
 EXPOSE 4000
+
+WORKDIR /src
           
-CMD [ "cd /src && jekyll build" ]
+CMD [ "jekyll", "build" ]
