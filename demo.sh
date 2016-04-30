@@ -20,7 +20,7 @@ git clone https://github.com/getmicah/getmicah.github.io.git site
 SITE=$(pwd)/site
 
 # for cygwin; generate correct path on host
-if command -v docker-machine >/dev/null 2>&1;
+if command -v cygpath >/dev/null 2>&1;
 then
     SITE=$(cygpath -u ${SITE} | cut -c 10-)
 fi
